@@ -42,7 +42,7 @@ class BookController extends ChangeNotifier {
 
   BookListResponse? similiarBook;
   fetchSimiliarBookApi(String title) async {
-    var url = Uri.parse('https://api.itbook.store/1.0/search/${title}');
+    var url = Uri.parse('https://api.itbook.store/1.0/search/$title');
     var response = await http.get(url);
 
     if (response.statusCode == 200) {

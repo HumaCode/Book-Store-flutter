@@ -16,7 +16,6 @@ class _BookListPageState extends State<BookListPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     // inisialisasi controller menggunakan provider
@@ -28,10 +27,10 @@ class _BookListPageState extends State<BookListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Book Catalogue"),
+        title: const Text("Book Catalogue"),
       ),
       body: Consumer<BookController>(
-        child: Center(child: CircularProgressIndicator()),
+        child: const Center(child: CircularProgressIndicator()),
         builder: (context, controller, child) => Container(
           child: bookController!.bookList == null
               ? child

@@ -12,7 +12,7 @@ class ImageViewScreen extends StatelessWidget {
         child: Stack(
           children: [
             Image.network(imageUrl),
-            BackButton(),
+            const BackButton(),
           ],
         ),
       ),
